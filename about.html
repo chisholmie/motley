@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>The Mot</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- Custom styles for this template -->
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <link href="css/business-casual.css" rel="stylesheet">
+
+  </head>
+<style>
+.box {
+  width:800px;
+  border: 1px solid black;
+  background-color: white;
+  right: 50%;
+  margin-right: -400px;
+  position: fixed;
+  z-index: 100;
+  padding: 25px;
+  display: none;
+}
+
+img.smol {
+  width: 200px;
+}
+
+</style>
+  <body>
+    <!-- Bowl of Soul Box -->
+    <div class="box" id="bowl-of-soul">
+      <div class="row">
+        <div class="col-md-4">
+          <img class="smol" src="img/Bowl_of_soul.jpg">
+        </div>
+        <div class="col-md-8">
+          Bowl of Soul is made for those cold fall days where all you want is your favorite tea steeped in steamed milk with a touch of honey and foam to top it all off? Fan favorite is the white coconut cream tea with soy milk! Also would recommend trying it with velvet tea!
+          <br>
+          <button onclick="closeBox('bowl-of-soul')">close</button>
+        </div>
+      </div>
+    </div>
+    <!--  End of Bowl of Soul Box -->
+    <!-- Matcha Box -->
+    <div class="box" id="matcha">
+      <div class="row">
+        <div class="col-md-4">
+          <img class="smol" src="img/matcha_cha.jpg">
+        </div>
+        <div class="col-md-8">
+          Everyone knows and loves the Motley’s matcha chacha. Steamed milk, vanilla syrup, and matcha blend together creating a creamy green tea flavor. Take your matcha chacha to the next level by blending in lemonade or white chocolate!  Or if you want a more subtle flavor, try adding rose or lavender.
+          <br>
+          <button onclick="closeBox('matcha')">close</button>
+        </div>
+      </div>
+    </div>
+    <!--  End of Matcha Box -->
+    <!-- London Fog Box -->
+    <div class="box" id="London">
+      <div class="row">
+        <div class="col-md-4">
+          <img class="smol" src="img/London_FOG.JPG">
+        </div>
+        <div class="col-md-8">
+          This drink is remarkably similar to a bowl of soul! This drink consists of Earl Grey tea, steamed milk and a pump of vanilla syrup.  It’s a perfect pick-me-up for grey winter days.
+          <br>
+          <button onclick="closeBox('London')">close</button>
+        </div>
+      </div>
+    </div>
+    <!--  End of London Fog Box -->
+    <!-- Hot Chocolate Box -->
+    <div class="box" id="coco">
+      <div class="row">
+        <div class="col-md-4">
+          <img class="smol" src="img/Hot_Coco.jpg">
+        </div>
+        <div class="col-md-8">
+          The Motley offers a lot of twists on Hot Chocolate.  Of course their original is amazing, but if you want to try something new, order their Mexican Hot chocolate!  It’s got a little more flare and spice than normal hot chocolate.  Or if you’re craving something cool, try their blended hot chocolate.  It’s the perfect chocolate drink for a warm SoCal day. <br>
+
+  (Pro tip: If you’re not ready to try their Mexican Hot Chocolate, try adding a pump of Toasted Marshmallow to your hot chocolate!)
+
+          <br>
+          <button onclick="closeBox('coco')">close</button>
+        </div>
+      </div>
+    </div>
+    <!--  End of Hot Chocolate Box -->
+    <!-- Milk Steamer Box -->
+    <div class="box" id="Steamer">
+      <div class="row">
+        <div class="col-md-4">
+          <img class="smol" src="img/Milk.JPG">
+        </div>
+        <div class="col-md-8">
+        It you’re looking for something to drink after a long day of studying, try out a Motley milk steamer.  You can get a milk steamer with any of the flavors the motley has to offer, but fan favorites include rose and lavender. They both bring out subtle flavors that aren’t too sweet or overwhelming.
+          <br>
+          <button onclick="closeBox('Steamer')">close</button>
+        </div>
+      </div>
+    </div>
+    <!--  End of Milk Streamer Box -->
+    <!-- Chai Box -->
+    <div class="box" id="chai">
+      <div class="row">
+        <div class="col-md-4">
+          <img class="smol" src="img/Chai_latte.jpg">
+        </div>
+        <div class="col-md-8">
+      The Motley has two Chai Latte flavors: spicy and sweet! The chai latte is a classic coffee-free drink consisting of simply steamed milk and chai tea concentrate, but fans recommend spicing it up with some lavender or coconut flavor.  Or if you’re looking for a bit more of a caffeine boost, try a Dirty Chai - it comes with a shot of espresso!
+          <br>
+          <button onclick="closeBox('chai')">close</button>
+        </div>
+      </div>
+    </div>
+    <!--  End of Chai Box -->
+    <!-- Smoothie Box -->
+    <div class="box" id="Shmoothie">
+      <div class="row">
+        <div class="col-md-4">
+          <img class="smol" src="img/Smoothie.jpg">
+        </div>
+        <div class="col-md-8">
+      When The Motley has their selection of fruits in stock, a smoothie is always the way to go.  You can make your own smoothie and fans recommend blending in lemonade (wow what) or a Yerba Mate for an extra boost to get you through those afternoon classes.
+          <br>
+          <button onclick="closeBox('Shmoothie')">close</button>
+        </div>
+      </div>
+    </div>
+    <!--  End of Smoothie Box -->
+    <!-- B&W Mocha Box -->
+    <div class="box" id="mocha">
+      <div class="row">
+        <div class="col-md-4">
+          <img class="smol" src="img/mocha.jpg">
+        </div>
+        <div class="col-md-8">
+      This is a normal Mocha but with a white chocolate twist!  This drink is a bit sweeter than normal mochas and are a must have for late night Motley runs - blended is highly recommended.   Motley goers love adding a pump or two of peppermint or toasted marshmallow to really spice things up.
+          <br>
+          <button onclick="closeBox('mocha')">close</button>
+        </div>
+      </div>
+    </div>
+    <!--  End of B&W Mocha Box -->
+    <div class="tagline-upper text-center text-heading text-shadow text-white mt-5 d-none d-lg-block">The Mot</div>
+    <div class="tagline-lower text-center text-expanded text-shadow text-uppercase text-white mb-5 d-none d-lg-block">345 E. 9TH ST., CLAREMONT, CA 91711 | (909) 607-3967</div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-faded py-lg-4">
+      <div class="container">
+        <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">Start Bootstrap</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="index.html">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item active px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="about.html">Fan Favorites</a>
+            </li>
+            <li class="nav-item px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="blog.html">Out of Stock</a>
+            </li>
+            <li class="nav-item px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="contact.html">Inspiration</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+
+      <div class="bg-faded p-4 my-4">
+        <hr class="divider">
+        <h2 class="text-center text-lg text-uppercase my-0">
+          <strong>The Menu</strong>
+        </h2>
+        <hr class="divider">
+        <div class="row">
+          <div class="col-lg-6">
+            <img class="img-fluid mb-4 mb-lg-0" src="img/menuHack.png" alt="">
+            <img class="img-fluid mb-4 mb-lg-0" src="img/menuHack1.png" alt="">
+          </div>
+          <div class="col-lg-6">
+            <p>The Motley takes cash, Flex, and Claremont cash. Remember that a disposable cup costs an extra $1!</p>
+            <p> </p>
+            <p><strong>Get your drink:</strong> hot, iced, blended</p>
+            <p><strong>Milk options:</strong> dairy, almond, soy, coconut</p>
+            <p><strong>Syrup options:</strong> vanilla, sugar-free vanilla, hazelnut, sugar-free hazelnut,
+              frosted mint, peppermint, lavender, rose, pumpkin spice, salted caramel, coconut, toasted marshmallow,
+              mango, raspberry, strawberry, pineapple, cinnamon, caramel, honey, agave, chocolate
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-faded p-4 my-4">
+        <hr class="divider">
+        <h2 class="text-center text-lg text-uppercase my-0">
+          <strong>Our Favorite Drinks</strong>
+        </h2>
+        <hr class="divider">
+        <div class="row">
+          <div class="col-md-4 mb-4 mb-md-0">
+            <div class="card h-100">
+              <img class="card-img-top" src="img/bowl_of_soul.jpg" alt="" onclick="showBox('bowl-of-soul')">
+              <div class="card-body text-center">
+                <h4 class="card-title m-0">Bowl of Soul
+                </h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4 mb-md-0">
+            <div class="card h-100">
+              <img class="card-img-top" src="img/Matcha_cha.JPG" alt="" onclick="showBox('matcha')">
+              <div class="card-body text-center">
+                <h4 class="card-title m-0">Matcha Cha-cha
+                </h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100">
+              <img class="card-img-top" src="img/London_FOG.JPG" alt="" onclick="showBox('London')">
+              <div class="card-body text-center">
+              <div class="card-body text-center">
+                <h4 class="card-title m-0">London Fog
+                </h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 mb-4 mb-md-0">
+            <div class="card h-100">
+              <img class="card-img-top" src="img/Milk.JPG" alt="" onclick="showBox('Steamer')">
+              <div class="card-body text-center">
+                <h4 class="card-title m-0">Milk Steamer
+                </h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4 mb-md-0">
+            <div class="card h-100">
+              <img class="card-img-top" src="img/Hot_Coco.jpg" alt="" onclick="showBox('coco')">
+              <div class="card-body text-center">
+                <h4 class="card-title m-0">Hot Chocolate
+                </h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100">
+              <img class="card-img-top" src="img/Chai_latte.jpg" alt="" onclick="showBox('chai')">
+              <div class="card-body text-center">
+                <h4 class="card-title m-0">Chai Latte
+                </h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100">
+              <img class="card-img-top" src="img/Smoothie.jpg" alt="" onclick="showBox('Shmoothie')">
+              <div class="card-body text-center">
+                <h4 class="card-title m-0">Motley Smoothies
+                </h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card h-100">
+                <img class="card-img-top" src="img/mocha.jpg" alt="" onclick="showBox('mocha')">
+                <div class="card-body text-center">
+                  <h4 class="card-title m-0">Black and White Mocha
+                  </h4>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- /.container -->
+
+    <footer class="bg-faded text-center py-5">
+      <div class="container">
+        <p class="m-0">Copyright &copy; A.S.K. Hackathon 2017</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script>
+      function showBox(item) {
+        document.querySelector(`#${item}`).style.display = "block"
+      }
+
+      function closeBox(item) {
+        document.querySelector(`#${item}`).style.display = "none"
+      }
+    </script>
+
+  </body>
+
+</html>
